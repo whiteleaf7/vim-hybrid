@@ -295,14 +295,17 @@ exe "hi! DiffChange"    .s:fg_changefg    .s:bg_changebg    .s:fmt_none
 exe "hi! DiffDelete"    .s:fg_background  .s:bg_delbg       .s:fmt_none
 exe "hi! DiffText"      .s:fg_background  .s:bg_blue        .s:fmt_none
 exe "hi! ErrorMsg"      .s:fg_background  .s:bg_red         .s:fmt_stnd
-exe "hi! VertSplit"     .s:fg_window      .s:bg_none        .s:fmt_none
+" exe "hi! VertSplit"     .s:fg_window      .s:bg_none        .s:fmt_none
+exe "hi! VertSplit      guifg=#5F6084 ctermfg=60".s:bg_none .s:fmt_none
 exe "hi! Folded"        .s:fg_comment     .s:bg_darkcolumn  .s:fmt_none
 exe "hi! FoldColumn"    .s:fg_none        .s:bg_darkcolumn  .s:fmt_none
 exe "hi! SignColumn"    .s:fg_none        .s:bg_darkcolumn  .s:fmt_none
 "   Incsearch"
-exe "hi! LineNr"        .s:fg_selection   .s:bg_none        .s:fmt_none
+" exe "hi! LineNr"        .s:fg_selection   .s:bg_none        .s:fmt_none
+exe "hi! LineNr ctermbg=NONE ctermfg=66 guibg=NONE guifg=#678686"
 exe "hi! CursorLineNr"  .s:fg_yellow      .s:bg_none        .s:fmt_none
-exe "hi! MatchParen"    .s:fg_background  .s:bg_changebg    .s:fmt_none
+" exe "hi! MatchParen"    .s:fg_background  .s:bg_changebg    .s:fmt_none
+exec "hi! MatchParen cterm=bold ctermbg=239 ctermfg=177 guibg=#4E4E4E guifg=#CB8EF8"
 exe "hi! ModeMsg"       .s:fg_green       .s:bg_none        .s:fmt_none
 exe "hi! MoreMsg"       .s:fg_green       .s:bg_none        .s:fmt_none
 exe "hi! NonText"       .s:fg_selection   .s:bg_none        .s:fmt_none
@@ -311,7 +314,8 @@ exe "hi! PmenuSel"      .s:fg_foreground  .s:bg_selection   .s:fmt_revr
 "   PmenuSbar"
 "   PmenuThumb"
 exe "hi! Question"      .s:fg_green       .s:bg_none        .s:fmt_none
-exe "hi! Search"        .s:fg_background  .s:bg_yellow      .s:fmt_none
+" exe "hi! Search"        .s:fg_background  .s:bg_yellow      .s:fmt_none
+exe "hi! Search cterm=underline gui=underline ctermfg=none ctermbg=none guifg=NONE guibg=NONE"
 exe "hi! SpecialKey"    .s:fg_selection   .s:bg_none        .s:fmt_none
 exe "hi! SpellCap"      .s:fg_blue        .s:bg_darkblue    .s:fmt_undr
 exe "hi! SpellLocal"    .s:fg_aqua        .s:bg_darkcyan    .s:fmt_undr
