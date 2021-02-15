@@ -300,7 +300,7 @@ exe "hi! VertSplit      guifg=#5F6084 ctermfg=60".s:bg_none .s:fmt_none
 exe "hi! Folded"        .s:fg_comment     .s:bg_darkcolumn  .s:fmt_none
 exe "hi! FoldColumn"    .s:fg_none        .s:bg_darkcolumn  .s:fmt_none
 " exe "hi! SignColumn"    .s:fg_none        .s:bg_darkcolumn  .s:fmt_none
-exe "hi! SignColumn"    .s:fg_none        ." ctermbg=NONE guibg=#2e2e40"  .s:fmt_none
+exe "hi! SignColumn"    .s:fg_none        ." ctermbg=NONE guibg=#222230"  .s:fmt_none
 "   Incsearch"
 " exe "hi! LineNr"        .s:fg_selection   .s:bg_none        .s:fmt_none
 exe "hi! LineNr ctermbg=NONE ctermfg=66 guibg=NONE guifg=#678686"
